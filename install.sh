@@ -39,11 +39,16 @@ link_config() {
 install_skill() {
   local name="$1"
   local skill_src="$REPO_DIR/skills/$name"
+  local skill_dst="$SKILLS_DIR/$name"
   if [ ! -d "$skill_src" ]; then
     echo "Error: skill '$name' not found in $REPO_DIR/skills/" >&2
     exit 1
   fi
-  symlink "$skill_src" "$SKILLS_DIR/$name"
+  # Remove existing real directory so we can replace it with a symlink
+  if [ -d "$skill_dst" ] && [ ! -L "$skill_dst" ]; then
+    rm -rf "$skill_dst"
+  fi
+  symlink "$skill_src" "$skill_dst"
   echo "  installed: $name"
 }
 
