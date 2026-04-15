@@ -1,0 +1,23 @@
+{
+  "skill_name": "review-pr",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "review PR 180",
+      "expected_output": "A structured report with sections for High/Medium/Low severity findings, each citing specific file paths and line numbers. Worktree should be cleaned up. Report should cover security, bugs, code quality, and performance concerns.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "can you review PR 177 for me? looking for any bugs or issues",
+      "expected_output": "A structured report reviewing all files changed in PR 177. Findings organised by severity. At minimum should identify code quality or bug concerns in the delete-waiting-carvatar feature. Worktree cleaned up after.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "/review-pr 112",
+      "expected_output": "A structured report on the refactor PR. Should note any issues with the Python refactor of get_random_groups. Worktree cleaned up. Report is terminal-only.",
+      "files": []
+    }
+  ]
+}

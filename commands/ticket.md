@@ -1,0 +1,1 @@
+Read Jira ticket #$1. Make sure you fully understand the requirements then use @agent-explore and @agent-auto-documenter:doc-reader to get any relevant information you require to start implementing the change

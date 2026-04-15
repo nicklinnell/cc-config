@@ -1,0 +1,27 @@
+# Claude Code local/sensitive files — never commit these
+.credentials.json
+settings.local.json
+history.jsonl
+mcp-needs-auth-cache.json
+policy-limits.json
+stats-cache.json
+
+# Runtime directories
+backups/
+cache/
+debug/
+file-history/
+paste-cache/
+plans/
+plugins/
+projects/
+session-env/
+sessions/
+shell-snapshots/
+tasks/
+telemetry/
+todos/
+statsig/
+
+# macOS
+.DS_Store

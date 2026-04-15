@@ -1,0 +1,153 @@
+{
+  "name": "cc-config",
+  "id": "cc-config",
+  "owner": {
+    "name": "nicklinnell"
+  },
+  "metadata": {
+    "description": "Nick's personal Claude Code skills collection",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "commit",
+      "source": "./skills/commit",
+      "description": "Create a git commit from staged or unstaged changes",
+      "version": "1.0.0",
+      "category": "workflow"
+    },
+    {
+      "name": "commit-push",
+      "source": "./skills/commit-push",
+      "description": "Commit staged changes and push to origin",
+      "version": "1.0.0",
+      "category": "workflow"
+    },
+    {
+      "name": "commit-push-pr",
+      "source": "./skills/commit-push-pr",
+      "description": "Commit staged changes, push, and open a PR",
+      "version": "1.0.0",
+      "category": "workflow"
+    },
+    {
+      "name": "compress-video-for-github",
+      "source": "./skills/compress-video-for-github",
+      "description": "Compress any video file into an MP4 suitable for embedding in a GitHub PR",
+      "version": "1.0.0",
+      "category": "utilities"
+    },
+    {
+      "name": "designing-subagents",
+      "source": "./skills/designing-subagents",
+      "description": "Design effective Claude Code sub-agents following best practices",
+      "version": "1.0.0",
+      "category": "meta"
+    },
+    {
+      "name": "device-logs",
+      "source": "./skills/device-logs",
+      "description": "Show iOS Simulator or Android Emulator device logs",
+      "version": "1.0.0",
+      "category": "mobile"
+    },
+    {
+      "name": "find-skills",
+      "source": "./skills/find-skills",
+      "description": "Discover and install agent skills",
+      "version": "1.0.0",
+      "category": "meta"
+    },
+    {
+      "name": "humanizer",
+      "source": "./skills/humanizer",
+      "description": "Remove signs of AI-generated writing from text",
+      "version": "1.0.0",
+      "category": "writing"
+    },
+    {
+      "name": "linear-spec",
+      "source": "./skills/linear-spec",
+      "description": "Generate a high-level specification summary for a Linear ticket",
+      "version": "1.0.0",
+      "category": "planning"
+    },
+    {
+      "name": "ralph-planning",
+      "source": "./skills/ralph-planning",
+      "description": "Generate implementation plans from project specifications for Ralph Wiggum loops",
+      "version": "1.0.0",
+      "category": "planning"
+    },
+    {
+      "name": "ralph-setup",
+      "source": "./skills/ralph-setup",
+      "description": "Generate Ralph Wiggum loop files for autonomous iterative AI development",
+      "version": "1.0.0",
+      "category": "planning"
+    },
+    {
+      "name": "recommending-automation-approaches",
+      "source": "./skills/recommending-automation-approaches",
+      "description": "Recommend and implement the best Claude Code automation approach",
+      "version": "1.0.0",
+      "category": "meta"
+    },
+    {
+      "name": "reflecting-on-session",
+      "source": "./skills/reflecting-on-session",
+      "description": "Analyse chat history and audit CLAUDE.md to improve project instructions",
+      "version": "1.0.0",
+      "category": "meta"
+    },
+    {
+      "name": "review-claudemd",
+      "source": "./skills/review-claudemd",
+      "description": "Review recent conversations to find improvements for CLAUDE.md files",
+      "version": "1.0.0",
+      "category": "meta"
+    },
+    {
+      "name": "review-pr",
+      "source": "./skills/review-pr",
+      "description": "Review a GitHub pull request for security issues, bugs, and code quality",
+      "version": "1.0.0",
+      "category": "code-review"
+    },
+    {
+      "name": "review-pr-comments",
+      "source": "./skills/review-pr-comments",
+      "description": "Critically evaluate reviewer comments on a GitHub pull request",
+      "version": "1.0.0",
+      "category": "code-review"
+    },
+    {
+      "name": "security-review",
+      "source": "./skills/security-review",
+      "description": "Review changed code for security vulnerabilities",
+      "version": "1.0.0",
+      "category": "code-review"
+    },
+    {
+      "name": "simulator-snapshot",
+      "source": "./skills/simulator-snapshot",
+      "description": "Capture a screenshot of the running iOS Simulator or Android Emulator",
+      "version": "1.0.0",
+      "category": "mobile"
+    },
+    {
+      "name": "tdd",
+      "source": "./skills/tdd",
+      "description": "Test-driven development with red-green-refactor loop",
+      "version": "1.0.0",
+      "category": "workflow"
+    },
+    {
+      "name": "verify-design",
+      "source": "./skills/verify-design",
+      "description": "Verify app UI against a Figma design",
+      "version": "1.0.0",
+      "category": "design"
+    }
+  ]
+}
