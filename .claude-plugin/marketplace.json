@@ -17,20 +17,6 @@
       "category": "workflow"
     },
     {
-      "name": "commit-push",
-      "source": "./skills/commit-push",
-      "description": "Commit staged changes and push to origin",
-      "version": "1.0.0",
-      "category": "workflow"
-    },
-    {
-      "name": "commit-push-pr",
-      "source": "./skills/commit-push-pr",
-      "description": "Commit staged changes, push, and open a PR",
-      "version": "1.0.0",
-      "category": "workflow"
-    },
-    {
       "name": "compress-video-for-github",
       "source": "./skills/compress-video-for-github",
       "description": "Compress any video file into an MP4 suitable for embedding in a GitHub PR",
@@ -52,58 +38,16 @@
       "category": "mobile"
     },
     {
-      "name": "find-skills",
-      "source": "./skills/find-skills",
-      "description": "Discover and install agent skills",
+      "name": "improve-ticket",
+      "source": "./skills/improve-ticket",
+      "description": "Refine a Linear ticket for clarity, structure, and actionability",
       "version": "1.0.0",
-      "category": "meta"
+      "category": "workflow"
     },
     {
-      "name": "humanizer",
-      "source": "./skills/humanizer",
-      "description": "Remove signs of AI-generated writing from text",
-      "version": "1.0.0",
-      "category": "writing"
-    },
-    {
-      "name": "linear-spec",
-      "source": "./skills/linear-spec",
-      "description": "Generate a high-level specification summary for a Linear ticket",
-      "version": "1.0.0",
-      "category": "planning"
-    },
-    {
-      "name": "ralph-planning",
-      "source": "./skills/ralph-planning",
-      "description": "Generate implementation plans from project specifications for Ralph Wiggum loops",
-      "version": "1.0.0",
-      "category": "planning"
-    },
-    {
-      "name": "ralph-setup",
-      "source": "./skills/ralph-setup",
-      "description": "Generate Ralph Wiggum loop files for autonomous iterative AI development",
-      "version": "1.0.0",
-      "category": "planning"
-    },
-    {
-      "name": "recommending-automation-approaches",
-      "source": "./skills/recommending-automation-approaches",
-      "description": "Recommend and implement the best Claude Code automation approach",
-      "version": "1.0.0",
-      "category": "meta"
-    },
-    {
-      "name": "reflecting-on-session",
-      "source": "./skills/reflecting-on-session",
-      "description": "Analyse chat history and audit CLAUDE.md to improve project instructions",
-      "version": "1.0.0",
-      "category": "meta"
-    },
-    {
-      "name": "review-claudemd",
-      "source": "./skills/review-claudemd",
-      "description": "Review recent conversations to find improvements for CLAUDE.md files",
+      "name": "karpathy-guidelines",
+      "source": "./skills/karpathy-guidelines",
+      "description": "Behavioural guidelines to reduce common LLM coding mistakes",
       "version": "1.0.0",
       "category": "meta"
     },
@@ -111,13 +55,6 @@
       "name": "review-pr",
       "source": "./skills/review-pr",
       "description": "Review a GitHub pull request for security issues, bugs, and code quality",
-      "version": "1.0.0",
-      "category": "code-review"
-    },
-    {
-      "name": "review-pr-comments",
-      "source": "./skills/review-pr-comments",
-      "description": "Critically evaluate reviewer comments on a GitHub pull request",
       "version": "1.0.0",
       "category": "code-review"
     },

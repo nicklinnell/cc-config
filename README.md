@@ -1,52 +1,40 @@
 # cc-config
 
-Personal Claude Code configuration: skills, hooks, and global settings.
+Nick's personal Claude Code marketplace — a collection of skills installable via the Claude Code plugin system.
 
-## Setup
-
-```bash
-git clone https://github.com/nicklinnell/cc-config ~/work/cc-config
-cd ~/work/cc-config
-chmod +x install.sh
-./install.sh
-```
-
-This symlinks `CLAUDE.md`, `software-engineering-guidelines.md`, hooks, and all skills into `~/.claude/`.
-
-## Managing skills
-
-```bash
-./install.sh list              # show available skills (* = installed)
-./install.sh install <skill>   # install a single skill
-./install.sh remove <skill>    # remove an installed skill
-./install.sh update            # pull latest and refresh all symlinks
-```
-
-## Structure
-
-```
-config/         Global CLAUDE.md, guidelines, and hooks
-commands/       Slash commands (e.g. /ticket)
-skills/         Individual skills — each is independently installable
-```
-
-## Adding as a marketplace
-
-Register this repo in your `~/.claude/settings.json`:
-
-```json
-"extraKnownMarketplaces": {
-  "cc-config": {
-    "source": {
-      "source": "github",
-      "repo": "nicklinnell/cc-config"
-    }
-  }
-}
-```
-
-Then install skills via:
+## Register
 
 ```
 /plugin marketplace add nicklinnell/cc-config
 ```
+
+## Install a skill
+
+```
+/plugin install <name>@cc-config
+```
+
+## Skills
+
+| Name | Description | Category |
+|------|-------------|----------|
+| `commit` | Create a git commit from staged or unstaged changes | workflow |
+| `compress-video-for-github` | Compress any video file into an MP4 suitable for embedding in a GitHub PR | utilities |
+| `designing-subagents` | Design effective Claude Code sub-agents following best practices | meta |
+| `device-logs` | Show iOS Simulator or Android Emulator device logs | mobile |
+| `improve-ticket` | Refine a Linear ticket for clarity, structure, and actionability | workflow |
+| `karpathy-guidelines` | Behavioural guidelines to reduce common LLM coding mistakes | meta |
+| `review-pr` | Review a GitHub pull request for security issues, bugs, and code quality | code-review |
+| `security-review` | Review changed code for security vulnerabilities | code-review |
+| `simulator-snapshot` | Capture a screenshot of the running iOS Simulator or Android Emulator | mobile |
+| `tdd` | Test-driven development with red-green-refactor loop | workflow |
+| `verify-design` | Verify app UI against a Figma design | design |
+
+## Adding a skill
+
+Each skill lives in `skills/<name>/` and needs:
+
+- `SKILL.md` — the skill definition
+- `.claude-plugin/plugin.json` — plugin metadata
+
+Then add an entry to `.claude-plugin/marketplace.json`.
