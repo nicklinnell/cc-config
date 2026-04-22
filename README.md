@@ -22,6 +22,7 @@ Nick's personal Claude Code marketplace — a collection of skills installable v
 | `compress-video-for-github` | Compress any video file into an MP4 suitable for embedding in a GitHub PR | utilities |
 | `designing-subagents` | Design effective Claude Code sub-agents following best practices | meta |
 | `device-logs` | Show iOS Simulator or Android Emulator device logs | mobile |
+| `grill-me` | Interview the user relentlessly about a plan or design until reaching shared understanding | workflow |
 | `improve-ticket` | Refine a Linear ticket for clarity, structure, and actionability | workflow |
 | `karpathy-guidelines` | Behavioural guidelines to reduce common LLM coding mistakes | meta |
 | `review-pr` | Review a GitHub pull request for security issues, bugs, and code quality | code-review |
@@ -34,7 +35,7 @@ Nick's personal Claude Code marketplace — a collection of skills installable v
 
 Each skill lives in `skills/<name>/` and needs:
 
-- `SKILL.md` — the skill definition
-- `.claude-plugin/plugin.json` — plugin metadata
+- `skills/<name>/skills/<name>/SKILL.md` — the skill definition
+- `skills/<name>/.claude-plugin/plugin.json` — plugin metadata (with `"skills": ["./skills/<name>"]`)
 
 Then add an entry to `.claude-plugin/marketplace.json`.
